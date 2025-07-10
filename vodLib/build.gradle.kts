@@ -25,12 +25,12 @@ publishing {
             from(components["fusedLibraryComponent"])
         }
     }
-    repositories {
-        maven {
-            name = "myLocalRepo"
-            url = uri(layout.buildDirectory.dir("myLocalRepo"))
-        }
-    }
+//    repositories {
+//        maven {
+//            name = "myLocalRepo"
+//            url = uri(layout.buildDirectory.dir("myLocalRepo"))
+//        }
+//    }
 }
 
 
