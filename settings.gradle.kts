@@ -17,12 +17,11 @@ dependencyResolutionManagement {
         google()
         mavenCentral()
         maven("https://artifact.bytedance.com/repository/Volcengine/")
-        //maven("https://jitpack.io/")
-        mavenLocal()
+        maven("https://jitpack.io/")
+//        mavenLocal()
     }
 }
 
 rootProject.name = "TTVod"
 include(":app")
 include(":vodLib")
-apply(from = file("gradle-config/vod_playerkit_library_settings.gradle"))
