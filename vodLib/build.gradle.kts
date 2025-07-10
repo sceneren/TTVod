@@ -67,5 +67,5 @@ dependencies {
     implementation(libs.androidx.appcompat)
 
     api(libs.bundles.ttsdk.player)
-    debugApi(libs.ttvideoengine.debugtool)
+    api(libs.ttvideoengine.debugtool)
 }

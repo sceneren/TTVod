@@ -69,4 +69,5 @@ dependencies {
     implementation(libs.androidx.appcompat)
 
     api(project(":vodLib"))
+//    implementation("com.github.sceneren:TTVod:0.0.7")
 }
