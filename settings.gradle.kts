@@ -17,7 +17,8 @@ dependencyResolutionManagement {
         google()
         mavenCentral()
         maven("https://artifact.bytedance.com/repository/Volcengine/")
-        maven("https://jitpack.io/")
+        //maven("https://jitpack.io/")
+        mavenLocal()
     }
 }
 

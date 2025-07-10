@@ -1,10 +1,9 @@
-import org.jetbrains.kotlin.gradle.dsl.JvmTarget
-
 plugins {
     alias(libs.plugins.android.fusedlibrary)
     `maven-publish`
 }
 
+@Suppress("UnstableApiUsage")
 androidFusedLibrary {
     namespace = "com.github.sceneren.ttvod"
     minSdk = 24
@@ -21,15 +20,15 @@ publishing {
     publications {
         register<MavenPublication>("release") {
             groupId = "com.github.sceneren"
-            artifactId = "ttvod"
-            version = "0.0.1"
+            artifactId = "ttVod"
+            version = "0.0.3"
             from(components["fusedLibraryComponent"])
         }
     }
     repositories {
         maven {
-            name = "myrepo"
-            url = uri(layout.buildDirectory.dir("repo"))
+            name = "myLocalRepo"
+            url = uri(layout.buildDirectory.dir("myLocalRepo"))
         }
     }
 }
