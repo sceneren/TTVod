@@ -68,8 +68,8 @@ dependencies {
     debugImplementation(libs.androidx.ui.test.manifest)
     implementation(libs.androidx.appcompat)
 
-//    api(project(":vodLib"))
-    api("com.github.sceneren:ttVod:0.0.3")
+    //api(project(":vodLib"))
+    //api("com.github.sceneren:ttVod:0.0.3")
 
     debugImplementation("com.bytedanceapi:ttvideoengine-debugtool:0.3.0.2")
     implementation("com.google.android.material:material:1.3.0")
